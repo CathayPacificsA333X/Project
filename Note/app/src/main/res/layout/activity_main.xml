@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id='@+id/title'
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:background="#FFFFFF"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="S.H.D
+Agent's List"
+        android:textSize="20sp" />
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:background="#FFFFFF"
+        android:queryHint="请输入搜索内容" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#f9f9f9"></ListView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="添加新的日志"
+        android:textSize="20sp" />
+
+</LinearLayout>
